@@ -27,7 +27,7 @@ In this exercise we will accomplish & learn how to implement following:
 
 Here is the reference architecture diagram used for creating virtual network with hub & spoke model.
 
-working on it...
+![image-74](images/image-74.png)
 
 <!-- ![image.png](/.attachments/image-00000000-0000-0000-0000-000000000000.png =500x300) -->
 
@@ -664,5 +664,5 @@ Now our Virtual Network is created and ready to use. You can now deploy AKS, ACR
 - <https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview>
 - <https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview?source=recommendations>
 - <https://learn.microsoft.com/en-us/azure/aks/concepts-network>
-
-
+- <https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli>
+- <https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks>
