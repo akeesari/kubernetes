@@ -1,14 +1,14 @@
 # **Exploring Docker Fundamentals**
 
-## **Overview** 
+## Overview 
 
 In this article, we'll explore the basics of Docker, which are like building blocks for understanding how containers work. Whether you're an experienced coder or just starting out, grasping these basics is essential for easily deploying applications in containers. These core concepts will come in handy as you continue your learning journey with docker.
 
-## **What is Docker?**
+## What is Docker?
 
 Docker is a powerful platform that simplifies the process of developing, shipping, and running applications. Docker uses a technology known as containerization to encapsulate an application and its dependencies into a self-contained unit called a `container`. These containers are lightweight, portable, and consistent across different environments.
 
-## **Why use Docker?**
+## Why use Docker?
 
 Docker simplifies the development, deployment, and management of applications, offering an adaptable solution for modern software development practices. Its popularity comes from from its ability to address challenges related to consistency, scalability, and efficiency in the software development lifecycle.
 
@@ -41,7 +41,7 @@ Docker has become increasingly popular in the software development and IT indust
 11. **Cross-platform compatibility:**
     Docker containers can run on various operating systems, including Linux, Windows, and macOS. This cross-platform compatibility is beneficial for teams working in heterogeneous environments.
 
-## **Docker concepts**
+## Docker concepts
 
 Understanding these basic concepts is essential for effectively working with Docker and leveraging its advantages in terms of portability, scalability, and consistency across different environments.  Here are basic concepts of Docker:
 
@@ -63,7 +63,7 @@ Understanding these basic concepts is essential for effectively working with Doc
 
 - **Networking** Docker provides networking capabilities that allow containers to communicate with each other or with the external world. Containers can be connected to different networks, and ports can be mapped between the host and the containers.
 
-## **Container orchestration**
+## Container orchestration
 
 Whether managing a small cluster or a large-scale production environment, adopting container orchestration is crucial for containerized applications. Here are some container orchestrations:
 
@@ -76,13 +76,13 @@ Whether managing a small cluster or a large-scale production environment, adopti
    - **Azure Kubernetes Service (AKS):** AKS is a managed Kubernetes service offered by Microsoft Azure. It simplifies the deployment and management of Kubernetes clusters in the Azure cloud.
 
 
-## **Docker Desktop**
+## Docker Desktop
 
 Docker Desktop is a powerful tool that provides a user-friendly interface and environment for developing, building, and testing applications using Docker containers on local machine. 
 
 Docker Desktop provides a convenient environment for developers to work with containers on their personal machines.
 
-## **Install Docker**
+## Install Docker
 
 Here are the steps to install Docker on a different operating systems:
 
@@ -190,15 +190,15 @@ Server: Docker Desktop 4.21.1 (114176)
 
 Docker is now installed on your machine, and you can start using it to containerize your applications.
 
-## **Docker Commands**
+## Docker Commands
 
 For more comprehensive details on Docker commands, please refer to the [Docker Commands Cheat Sheet](https://anjikeesari.com/developertools/cheatsheets/docker-cheat-sheet/){:target='_blank'} on our website.
 
-## **Conclusion**
+## Conclusion
 
 Docker and containerization have changed the way we build and use application development. Now that you understand the basics of Docker, you're ready to dive deeper. Docker is straightforward and flexible, making it a great tool for developers. It ensures that your application works the same way in different situations, keeps things separate, and easily grows with your needs. So, go ahead and start your journey with containers.
 
-## **References**
+## References
 
 - [Getting started guide](https://docs.docker.com/get-started/){:target="_blank"}
 - [Docker images](https://hub.docker.com/search?q=){:target="_blank"}
