@@ -1,6 +1,4 @@
-pip list
-
-mkdocs new .
+# Instructions to run the website locally:
 
 mkdocs serve
 
