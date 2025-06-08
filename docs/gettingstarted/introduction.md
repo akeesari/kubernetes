@@ -3,78 +3,72 @@ Welcome to the world of containerized microservices and Kubernetes, where scalab
 
 However, managing microservices can be challenging, particularly when it comes to deployment and scaling. Kubernetes is a powerful tool for managing containerized applications and has become the standard for deploying microservices. Kubernetes provides a robust platform for managing containerized applications, but it can be complex to set up and manage.
 
-In this book, "Build and Deploy Microservices on Kubernetes using ArgoCD & Helm," I will show you how to tackle these challenges and successfully build and deploy containerized microservices applications on Kubernetes using ArgoCD and Helm. ArgoCD is a powerful continuous delivery tool that simplifies the deployment of Kubernetes applications. Helm, on the other hand, is a package manager for Kubernetes that makes it easy to deploy and manage complex applications.
+This book is about building that infrastructure.
 
-Throughout this book, I will guide you step by step, providing detailed instructions and practical examples, making it accessible to developers, DevSecOps engineers, and IT professionals. Whether you are new to containerized microservices or have prior experience, this book will helps you with the knowledge and skills necessary to leverage the full potential of microservices on Kubernetes using ArgoCD and Helm.
+You’ll learn how to provision, secure, and scale essential cloud components on **Microsoft Azure**, using **Terraform**, one of the most widely adopted Infrastructure as Code (IaC) tools. By the end of this journey, you’ll not only understand the technical how-to but also develop the architectural thinking needed to support modern applications in production environments.
 
-The implementation guide within this book serves as your reference architecture for creating, deploying, and managing your microservices architecture with Azure Kubernetes Services (AKS) using ArgoCD and Helm's CI/CD DevOps process. You will learn how to create multiple microservice applications with different technology stacks, containerize these microservices, push them to Azure Container Registry (ACR), and finally deploy them to Azure Kubernetes Service (AKS). Additionally, you will gain a comprehensive understanding of deploying microservice applications to AKS using ArgoCD and Helm Charts.
+Throughout this book, I will guide you step by step, providing detailed instructions and practical examples, making it accessible to developers, DevSecOps engineers, and IT professionals. Whether you are new to containerized microservices or have prior experience, this book will helps you with the knowledge and skills necessary to leverage the full potential of microservices on Kubernetes Infrastructure.
 
-Get ready to start on a journey of mastering microservice deployment on Kubernetes with ArgoCD and Helm. Let's look into the true potential of cloud-native development!
+The implementation guide within this book serves as your reference architecture for creating Scalable Kubernetes Cloud Infrastructure for Microservices architecture using Azure and Terraform.
 
-## Organization of this Book:
 
-At a high level, this book is organized into a total of six chapters, each featuring multiple exercises or labs designed to enhance your understanding.
+## Why Azure and Terraform?
 
-**Chapter 1: Building Containerized Microservices** 
+Azure is a leading enterprise cloud platform with services like container-based and distributed workloads. Its managed Kubernetes service—**Azure Kubernetes Service (AKS)**—offers a powerful foundation for deploying microservices.
 
-In this first chapter, "Building Containerized Microservices" we will explore the fundamental concepts of microservices, Docker, and dev containers. Additionally, we explore microservices implementation patterns utilizing Azure DevOps Git repositories. I will guide you through the process of creating multiple containerized microservices applications employing various technology stacks. The chapter covers essential topics such as organizing your code in Git repositories, Dockerizing applications with Dockerfiles, and pushing Docker containers to container registries.
+Terraform, on the other hand, provides a declarative, consistent way to define and deploy cloud infrastructure using code. Together, Azure and Terraform offer the ability to:
 
-Throughout the exercises, we will create microservices using different technologies, including .NET Core, Node.js, and React.js. Additionally, we'll delve into the creation of containerized databases, such as SQL Server and PostgreSQL. The containerized microservices applications developed in this chapter will form the foundational basis for subsequent labs.
+* Automate and version-control infrastructure provisioning
+* Create repeatable environments across dev, test, preprod, and production
+* Rapidly deploy and scale microservices with full governance and observability
+* Reduce manual errors and improve operational consistency
 
-**Chapter 2: Create Azure Infrastructure with Terraform** 
+This book bridges the gap between theory and hands-on application using these tools.
 
-In this second chapter, "Create Azure Infrastructure with Terraform," we look into Infrastructure as Code (IaC) and the benefits it brings. Focusing on Terraform as our IaC tool, we explore its setup and address the crucial task of hosting containerized microservices applications.
 
-Using Terraform, I guide you through the creation of essential Azure cloud resources. These include a Log Analytics workspace, Virtual Network, Azure Container Registry (ACR), Application Gateway, Azure Kubernetes Service, Azure PostgreSQL Database, Azure Key Vault, Azure Redis Cache, Azure Storage Account, Azure Event Hubs, and the setup of Front Door and CDN profiles. The goal is to automate the infrastructure creation process comprehensively, adhering to best practices in infrastructure management.
+## Who Should Read This Book
 
-**Chapter 3: Prepare Azure Kubernetes Service (AKS) for Microservices** 
+This book is for a wide audience of technology professionals:
 
-In this third chapter, we delve into the details of preparing applications for Azure Kubernetes Service (AKS). The focus is on deploying a .NET Core API and containerized microservices applications to AKS, complemented by hands-on experience in managing AKS clusters using kubectl. Additionally, we explore the setup of NGINX ingress controller, Application Gateway ingress controller (AGIC), and Cert-Manager in AKS using Terraform.
+* **Cloud Engineers** and **DevOps Practitioners** who want hands-on experience provisioning and managing infrastructure with Terraform on Azure
+* **Developers** building microservices who want to better understand the underlying infrastructure
+* **Solutions Architects** looking to implement scalable, cloud-native architecture using Infrastructure as Code
+* **IT professionals or students** transitioning into cloud and DevOps roles
 
-This chapter also covered the issuance of Let's Encrypt SSL Certificates to enhance website security, addresses the integration of Azure Key Vault with AKS, offering robust security measures. Kubernetes Pod troubleshooting techniques are detailed, ensuring a comprehensive understanding. The chapter concludes by guiding you through the creation of a new user node pool in AKS, providing valuable insights into upgrading or resizing node pools. By the end of this chapter, you will possess the knowledge and skills required to proficiently manage containerized applications within a Kubernetes environment.
+I will expect basic prior experience with Terraform is required, and familiarity with Azure and general DevOps principles will help.
 
-**Chapter 4: Microservices CI/CD with Azure DevOps**
 
-In the fourth chapter, "Microservices CI/CD with Azure DevOps," we will look into the world of DevOps and its relevance to microservices. We will discuss DevOps best practices and outline a CI/CD (Continuous Integration/Continuous Delivery/Deployment) strategy specifically tailored for microservices on Kubernetes. Furthermore, you will learn how to create DevOps pipelines for each of your microservices applications, ensuring streamlined and automated software delivery.
+## What You’ll Learn
 
-**Chapter 5: Helm: Managing Kubernetes Deployments**
+Through structured chapters and labs, you will:
 
-Chapter 5 will introduce you to Helm, a powerful package manager for Kubernetes. We will start by creating basic Helm charts and familiarizing ourselves with frequently used Helm commands. You will then learn how to convert the basic Helm charts for your microservices applications and package them for easy deployment. Additionally, we will explore pushing Helm charts to a container registry and deploying them effectively in a Kubernetes environment.
+* Understand the fundamentals of Infrastructure as Code
+* Set up Terraform to manage Azure infrastructure
+* Provision essential cloud services: AKS, ACR, PostgreSQL, Redis, Key Vault, Event Hubs, and more
+* Build secure and network-aware cloud environments
+* Manage configurations across environments (Dev, Test, PreProd & Prod)
+* Integrate logging, monitoring, and diagnostics
+* Prepare for real-world scenarios with production-readiness practices
 
-**Chapter 6: ArgoCD: Continuous Deployment for Kubernetes**
+## How This Book Is Structured
 
-The final chapter, "ArgoCD: Continuous Deployment for Kubernetes," will introduce you to ArgoCD, a robust continuous delivery tool specifically designed for Kubernetes environments. I will cover the installation of ArgoCD and its command-line interface (CLI). You will gain insights into creating projects, repositories, and applications within ArgoCD, enabling seamless deployment of your microservices. Furthermore, we will explore how to deploy Helm charts using ArgoCD, ensuring efficient and controlled application deployments.
+The book is designed to be **lab-driven**, with each chapter building on the previous one. You’ll begin by setting up your Terraform environment, then incrementally provision each component of a scalable microservices infrastructure.
 
-<!-- !!! note
+Each lab includes:
 
-    Each chapter will be supplemented with exercises or labs, allowing you to apply the concepts learned and reinforce your understanding of the topics covered. -->
+* A clear goal and purpose
+* Terraform code walkthroughs
+* Step-by-step deployment instructions
+* Screenshots, CLI commands, and validation checks
+* Tips and best practices
+* Clean-up guidance to manage cost and clutter
 
-<!-- 
-This book starts with Getting Started where you will the introduction of this book (current chapter) -->
-## Intended Audience of the Book:
+## Prerequisites
 
-This book is intended for a range of professionals including software developers, architects, DevSecOps engineers, and individuals interested in building microservices applications using Kubernetes and related tools.
+Before getting started, make sure you have:
 
-Specifically, this book is ideal for individuals who already possess some familiarity with Kubernetes and wish to explore how to leverage it for building and deploying microservices applications using Argocd and Helm. It is also well-suited for those who are new to Kubernetes and want to learn how to use it for microservices development.
-
-The content of this book will be particularly valuable to professionals working in organizations that are transitioning to a microservices architecture or utilizing Kubernetes for container orchestration. It may also be relevant for students or researchers seeking to expand their knowledge of modern software development practices.
-
-While the book assumes a basic level of knowledge in software development or DevSecOps, it can still be accessible to individuals new to these subjects who are willing to dedicate the necessary time and effort to learn. The book provides explanations and guidance throughout, enabling readers to grasp the concepts and successfully apply them in practice.
-
-By addressing the needs of both experienced practitioners and newcomers to the field, this book aims to empower a diverse audience with the skills and knowledge required to build robust and scalable microservices applications using Kubernetes, Argocd, and Helm.
-
-## Key Benefits of Reading This Book:
-
-By reading this book, you will gain a variety of key benefits, including:
-
-1. **Practical Guidance on Building Microservices Applications:** This book offers practical guidance and best practices for designing, developing, and deploying microservices applications using Kubernetes and related tools. You will learn how to effectively utilize Helm and ArgoCD to streamline your microservices workflow and achieve efficient application deployment.
-
-2. **Comprehensive Coverage of Key Topics:** With this book, you will receive comprehensive coverage of various topics essential to microservices development. From containerization to deployment strategies and beyond, you will gain an in-depth understanding of the core concepts and techniques involved in building microservices applications on Kubernetes.
-
-3. **Real-World Examples and Case Studies:** To provide practical insights, this book includes real-world examples and case studies. These scenarios will help you grasp how microservices applications can be successfully built and deployed using Kubernetes and associated tools. You will be able to apply the concepts and techniques from the book to real-world situations.
-
-4. **Hands-On Exercises and Code Samples:** To enhance your learning experience, this book offers hands-on exercises and code samples. These activities provide opportunities to practice your skills and build your own microservices applications. By engaging in these exercises, you will gain practical experience working with Kubernetes and related tools.
-
-5. **Guidance on Best Practices:** This book offers guidance on best practices for building microservices applications on Kubernetes. You will learn how to design and deploy scalable, reliable, and maintainable microservices applications. Following the best practices outlined in this book ensures optimal application performance and manageability.
-
-In summary, this book serves as a comprehensive guide to building microservices applications on Kubernetes, providing practical guidance, real-world examples, hands-on exercises, and best practices. By leveraging the knowledge and skills acquired from this book, you will be equipped to design, develop, and deploy microservices applications effectively in a Kubernetes environment, using the latest tools and industry best practices.
+* An active **Azure subscription** (Free Tier is sufficient for most labs)
+* Required permissions in Azure subscription (Global Administrator permissions recommended)
+* **Terraform installed** on your local machine
+* Basic understanding of Azure cloud, Kubernetes and container concepts 
+* Access to a terminal or command-line interface (PowerShell, Bash, etc.)

@@ -201,20 +201,21 @@ nav:
   - Home:
     - Home: index.md      
   - Getting started:
-    - Table of Contents: gettingstarted/toc.md    
-    - About the Author: gettingstarted/about-author.md      
-    - Acknowledgments: gettingstarted/acknowledgments.md      
-    - Introduction: gettingstarted/introduction.md    
-    - Lab Format: gettingstarted/lab-format.md    
+    - Table of Contents: gettingstarted/toc.md
+    - About the Author: gettingstarted/about-author.md
+    - Acknowledgments: gettingstarted/acknowledgments.md
+    - Preface: gettingstarted/preface.md
+    - Introduction: gettingstarted/introduction.md
+    - Lab Format: gettingstarted/lab-format.md
   - Azure (IaC):
     - Infrastructure as Code (IaC): azure/1-iac.md
-    - Microservices Architecture on AKS: azure/1-microservices-architecture-on-aks.md
+    - Microservices on Kubernetes: azure/2-microservices-on-k8s.md
     # - Azure Naming & Tagging Conventions: azure/2-naming-conventions.md
-    - Azure Account & Subscription Management: azure/3-azure-account-subscription.md
+    # - Azure Account & Subscription Management: azure/3-azure-account-subscription.md
     # - Create new subscription: azure/4-azure-subscription.md
     # - Register resource providers: azure/5-resource-providers.md
-    - Setup Terraform Foundation Part-1: azure/6-tf-foundation-1.md
-    - Setup Terraform Foundation Part-2: azure/6-tf-foundation-2.md
+    - Setup Terraform Foundation Part-1: azure/3-tf-foundation-1.md
+    - Setup Terraform Foundation Part-2: azure/4-tf-foundation-2.md
     - Create Log Analytics Workspace using terraform: azure/7-log-analytics-workspace.md
     -  Create Virtual Network using terraform: azure/8-vnet.md
     -  Create Azure Container Registry (ACR) using terraform: azure/9-acr.md
