@@ -1,13 +1,8 @@
 # Table of Contents
 
-<!-- **Introduction** -->
-
 - [About the Author](../gettingstarted/about-author.md)
 - [Acknowledgments](../gettingstarted/acknowledgments.md)
 - [Introduction](../gettingstarted/introduction.md)
-<!-- - Developer Workstation Configuration
-- Download & Install software (workstation setup)
-- Technology Stack -->
 
 [**Chapter-2: Create Azure Infrastructure with Terraform**](../azure/1-iac.md)
 
@@ -45,15 +40,12 @@
 - [Lab-13: Create a new user node pool in AKS](../kubernetes/aks-create-nodepool.md)
 - [Lab-14: Upgrade or Resize node pools in AKS](../kubernetes/aks-upgrade-nodepool.md)
 
-**Chapter 4: Azure DevOps - Build & Release Pipelines**
+<!-- **Chapter 4: Azure DevOps - Build & Release Pipelines**
 
 - [Azure DevOps Overview](../devops/1-devops-overview.md)
 - [Create new service connections](../devops/pipelines/1-service-connections.md)
 - [Create Pipeline for .NET Core Web API](../devops/pipelines/2-pipeline-aspnet-api.md)
 - [Create Pipeline for ASP.NET Core Website](../devops/pipelines/3-pipeline-aspnet-app.md)
-<!-- - [Create Pipeline for Node JS API]
-- [Create Pipeline for React JS website]
-- [Create Pipeline for Database deployment] -->
 
 **Chapter 5: Argo CD - Continuous Deployment and GitOps**
 
@@ -70,5 +62,5 @@
 - [Introduction to Helm Charts](../helmchart/1-introduction.md)
 - [Create Your First Helmchart](../helmchart/2-create-helm.md)
 - [Frequently used Helm commands details](../helmchart/3-helm-cmds.md)
-- [Create Helmchart for Microservices](../helmchart/4-helm-microservices.md)
+- [Create Helmchart for Microservices](../helmchart/4-helm-microservices.md) -->
 

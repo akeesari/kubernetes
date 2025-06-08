@@ -71,8 +71,6 @@ theme:
   icon:  # from .icons path. Add to theme override for custom logo.
     logo: ak-logo  # top left header logo  
   favicon: assets/ak-logo.ico #browser tab logo
-  extra_css:
-      - css/custom.css
 
   extra_javascript:
   - javascripts/extra.js
@@ -80,6 +78,9 @@ theme:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
+extra_css:
+    - stylesheets/extra.css
+    
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -248,31 +249,29 @@ nav:
       - Monitor AKS Cluster Introduction : kubernetes/monitoring/introduction.md
       - Create an Azure Monitoring Workspace Using Terraform : kubernetes/monitoring/monitor-workspace.md
       - Create an Azure Managed Grafana workspace Using Terraform : kubernetes/monitoring/grafana-workspace.md
-  - Azure DevOps:
-    - Azure DevOps Overview : devops/1-devops-overview.md
-    - Create Your First service connection : devops/pipelines/1-service-connections.md
-    - Create Pipeline for .NET Core Web API : devops/pipelines/2-pipeline-aspnet-api.md
-    - Create Pipeline for ASP.NET Core MVC Project : devops/pipelines/3-pipeline-aspnet-app.md
-  - Argo CD: 
-        - Introduction to Argo CD: argocd/1-argocd-intro.md
-        - Install Argo CD in Kubernetes: argocd/2-install-argocd.md
-        - Install & Interact with ArgoCD CLI: argocd/3-install-argocd-cli.md
-        - Registering an AKS Cluster with Argo CD: argocd/register-cluster.md
-        - Deploy Your First application with Argo CD: argocd/deploy-app.md
-        - Create new ArgoCD Project: argocd/argocd-project.md
-        - Create new Repository in ArgoCD: argocd/argocd-repo.md
-  - Helm Charts:
-        - Introduction to Helmcharts: helmchart/1-introduction.md
-        - Create Your First Helmchart: helmchart/2-create-helm.md
-        - Frequently used Helm commands details: helmchart/3-helm-cmds.md
-        - Create Helmchart for Microservices: helmchart/4-helm-microservices.md    
-        - Install pgadmin4 in AKS: helmchart/5-install-pgadmin4.md    
-        - Install Grafana in AKS: helmchart/6-install-grafana.md    
-        - Install Grafana Loki-Stack in AKS: helmchart/7-install-grafana-loki-stack.md    
-        - Install Redis in AKS: helmchart/8-install-redis.md
-        - Install Minio in AKS: helmchart/9-install-minio.md
-        - Install ADCS Issuer in AKS: helmchart/10-install-adcs-issuer.md
-        - Install Jaeger in AKS: helmchart/11-install-jaeger.md
-        - Install OpenTelemetry Operator in AKS: helmchart/12-install-otel-operator.md
-  # - Contact:
-  #   - Contact: contact.md
+  # - Azure DevOps:
+  #   - Azure DevOps Overview : devops/1-devops-overview.md
+  #   - Create Your First service connection : devops/pipelines/1-service-connections.md
+  #   - Create Pipeline for .NET Core Web API : devops/pipelines/2-pipeline-aspnet-api.md
+  #   - Create Pipeline for ASP.NET Core MVC Project : devops/pipelines/3-pipeline-aspnet-app.md
+  # - Argo CD: 
+  #       - Introduction to Argo CD: argocd/1-argocd-intro.md
+  #       - Install Argo CD in Kubernetes: argocd/2-install-argocd.md
+  #       - Install & Interact with ArgoCD CLI: argocd/3-install-argocd-cli.md
+  #       - Registering an AKS Cluster with Argo CD: argocd/register-cluster.md
+  #       - Deploy Your First application with Argo CD: argocd/deploy-app.md
+  #       - Create new ArgoCD Project: argocd/argocd-project.md
+  #       - Create new Repository in ArgoCD: argocd/argocd-repo.md
+  # - Helm Charts:
+  #       - Introduction to Helmcharts: helmchart/1-introduction.md
+  #       - Create Your First Helmchart: helmchart/2-create-helm.md
+  #       - Frequently used Helm commands details: helmchart/3-helm-cmds.md
+  #       - Create Helmchart for Microservices: helmchart/4-helm-microservices.md    
+  #       - Install pgadmin4 in AKS: helmchart/5-install-pgadmin4.md    
+  #       - Install Grafana in AKS: helmchart/6-install-grafana.md    
+  #       - Install Grafana Loki-Stack in AKS: helmchart/7-install-grafana-loki-stack.md    
+  #       - Install Redis in AKS: helmchart/8-install-redis.md
+  #       - Install Minio in AKS: helmchart/9-install-minio.md
+  #       - Install ADCS Issuer in AKS: helmchart/10-install-adcs-issuer.md
+  #       - Install Jaeger in AKS: helmchart/11-install-jaeger.md
+  #       - Install OpenTelemetry Operator in AKS: helmchart/12-install-otel-operator.md
