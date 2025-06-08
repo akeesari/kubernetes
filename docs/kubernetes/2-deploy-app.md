@@ -70,7 +70,7 @@ kubectl get namespace -A
 
 If you haven't already, create an ASP.NET Core MVC application. You can use Visual Studio code. Ensure your application runs locally before containerizing it.
 
-Check this for more information - [Create your first website using .NET Core MVC](../microservices/3.aspnet-app.md#step-1-create-a-new-aspnet-core-web-app-mvc-project)
+Check this for more information - [Create your first website using .NET Core MVC](https://microservices.anjikeesari.com/microservices/6.aspnet-app/#step-1-create-a-new-aspnet-core-web-app-mvc-project)
 
 ## Step 2: Dockerize Your Application
 
@@ -78,7 +78,7 @@ Check this for more information - [Create your first website using .NET Core MVC
 - Build the Docker image:
 - Test the image locally:
 
-Check this for more information - [Create your first website using .NET Core MVC](../microservices/3.aspnet-app.md#step-4-add-dockerfiles-to-the-mvc-project)
+Check this for more information - [Create your first website using .NET Core MVC](https://microservices.anjikeesari.com/microservices/6.aspnet-app/#step-4-add-dockerfiles-to-the-mvc-project)
 
 ## Step 3: Push the Docker Image to Azure Container Registry (ACR)
 
@@ -87,7 +87,7 @@ To deploy your image to AKS, you need to store it in a container registry like A
 1. Create an ACR in your Azure subscription using the Azure Portal or Azure CLI.
 2. Push your Docker image to the ACR:
 
-Check this for more information - [Create your first website using .NET Core MVC](../microservices/3.aspnet-app.md#step-6-docker-run-locally)
+Check this for more information - [Create your first website using .NET Core MVC](https://microservices.anjikeesari.com/microservices/6.aspnet-app/#step-6-docker-run-locally)
 
 
 
