@@ -9,8 +9,8 @@ site_url: https://akeesari.github.io/kubernetes/
 # Author details
 site_author: Anji Keesari
 site_description: >-
-  Build and Deploy Microservices on Kubernetes using ArgoCD & Helm
-  Azure and Azure DevOps Pipelines.
+  Building Scalable Kubernetes Infrastructure for Microservices
+  Azure and Terraform.
 
 # # Repository details
 # repo_name: akeesari.github.io/mkdocs/
