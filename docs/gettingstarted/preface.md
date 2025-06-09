@@ -1,14 +1,12 @@
-## **Building Scalable Cloud Infrastructure for Microservices**
+**Building Scalable Kubernetes Infrastructure for Microservices**
 
 *— with real-world labs using Azure and Terraform*
 
----
+In today’s fast-moving cloud landscape, microservices have become the preferred architecture for building scalable, resilient applications. But designing and deploying the infrastructure to support those services—securely, reliably, and at scale—is still one of the toughest challenges in cloud engineering. That’s what inspired this book.
 
-In the modern era of cloud computing, microservices have become the backbone of scalable and resilient application architectures. However, building the infrastructure to support these microservices—securely, reliably, and at scale—remains one of the most complex challenges in DevOps and cloud engineering. This book is created to come out of those challenges.
+Over the years, working as a cloud architect on large-scale solutions built on Microsoft Azure, I’ve seen first-hand the critical role that automation plays in building sustainable infrastructure. Infrastructure as Code (IaC) has emerged as a key practice, and among the tools available, Terraform stands out for its power, flexibility, and cloud-agnostic approach.
 
-As an architect deeply involved in designing and deploying enterprise-grade solutions on Microsoft Azure, I’ve seen how important it is to automate infrastructure provisioning using Infrastructure as Code (IaC). Terraform, as a powerful IaC tool, has become a critical asset in managing cloud resources efficiently, reducing human error, and enabling repeatable, version-controlled infrastructure deployments.
-
-This book is a practical guide for architects, DevOps engineers, developers, and anyone who wants to master the art of building cloud infrastructure to support microservices at scale. I focus on real-world scenarios and hands-on labs using **Microsoft Azure** and **Terraform** to provision key cloud components like:
+This book is written for architects, DevOps professionals, developers, and cloud engineers who want a practical, hands-on guide to building infrastructure that can support microservices effectively. Using real-world labs and examples, I’ll walk you through how to use Terraform to provision essential Azure services such as:
 
 * Azure Kubernetes Service (AKS)
 * Azure Container Registry (ACR)
@@ -17,17 +15,15 @@ This book is a practical guide for architects, DevOps engineers, developers, and
 * Azure Key Vault
 * Event Hubs for Kafka
 * Redis Cache
-* Front Door and CDN
+* Azure Front Door and CDN
 * Log Analytics and Monitoring
 
-Each lab builds progressively toward a fully functional microservices environment—deployed entirely via code.
+Each lab builds on the previous one, gradually leading you toward a complete, production-ready microservices environment—fully provisioned through code.
 
-While this book emphasizes Azure and Terraform, the principles you’ll learn—modularization, automation, environment management, and cloud-native best practices—are applicable across cloud platforms and tools.
+While the focus of this book is on Azure and Terraform, the concepts—automation, modularization, repeatability, and security—are broadly applicable across any cloud platform or infrastructure stack.
 
-I’ve written this book not only to share technical skills, but also to help you think like an architect: how to structure your infrastructure, optimize your deployments, secure your data, and design for scale and maintainability.
+More than just code, I want this book to help you think like a systems architect. You’ll learn how to design infrastructure that scales, how to automate repeatable processes, how to secure cloud workloads, and how to keep operations simple and maintainable in the long run.
 
-Whether you're beginning your journey with cloud-native infrastructure or looking to refine your skills, I hope this book provides you with the insights, confidence, and practical experience needed to succeed.
-
-Let’s get started on building scalable cloud infrastructure for the future.
+Whether you’re just starting out in the world of cloud-native infrastructure or looking to sharpen your existing skills, I hope this book becomes a valuable companion on your journey.
 
 **— Anji Keesari**
