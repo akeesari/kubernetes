@@ -18,7 +18,7 @@ site_description: >-
 
 # Configuration
 theme:
-  logo: assets/logo.png
+  logo: assets/images/ak-logo.png
   name: material # readthedocs
   custom_dir: docs/overrides
   # 404 page
@@ -70,7 +70,7 @@ theme:
         name: Switch to light mode
   icon:  # from .icons path. Add to theme override for custom logo.
     logo: ak-logo  # top left header logo  
-  favicon: assets/ak-logo.ico #browser tab logo
+  favicon: assets/images/ak-logo.ico #browser tab logo
 
   extra_javascript:
   - javascripts/extra.js
