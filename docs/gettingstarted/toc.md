@@ -4,9 +4,9 @@
 - [Acknowledgments](../gettingstarted/acknowledgments.md)
 - [Preface](../gettingstarted/preface.md)
 - [Introduction](../gettingstarted/introduction.md)
-- [Lab Format](../gettingstarted/lab-format.md)
+- [Lab Format and Tools](../gettingstarted/lab-format.md)
 
-[**Chapter-2: Create Azure Infrastructure with Terraform**](../azure/1-iac.md)
+[**Chapter 1: Fundamentals of Infrastructure as Code (IaC)**](../azure/1-iac.md)
 
 - [Lab-1: Infrastructure as Code (IaC)](../azure/1-iac.md) 
 - [Lab-2: Microservices Architecture on AKS](../azure/2-microservices-on-k8s.md)
