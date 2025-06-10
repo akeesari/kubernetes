@@ -1,25 +1,13 @@
-# Copyright (c) 2024 Anji Keesari <anjkeesari@gmail.com>
+# Copyright (c) 2025 Anji Keesari <anjkeesari@gmail.com>
 
-# Project information
-site_name: Microservices with Kubernetes (Developer User Guide)
+site_name: Kubernetes Infra for Microservices
 site_url: https://akeesari.github.io/kubernetes/
-# repo_url: https://github.com/akeesari/microservices-with-k8s
-# edit_uri: edit/main/docs/
-
-# Author details
 site_author: Anji Keesari
-site_description: >-
-  Building Scalable Kubernetes Infrastructure for Microservices
-  Azure and Terraform.
+site_description: Real-world labs using Azure and Terraform to build scalable Kubernetes infrastructure for microservices
 
-# # Repository details
-# repo_name: akeesari.github.io/mkdocs/
-# repo_url: https://akeesari.github.io/mkdocs/
-
-# Configuration
 theme:
-  logo: assets/images/ak-logo.png
-  name: material # readthedocs
+  name: material
+  logo: assets/images/ak-logo.png  
   custom_dir: docs/overrides
   # 404 page
   static_templates:
@@ -207,13 +195,10 @@ nav:
     - Preface: gettingstarted/preface.md
     - Introduction: gettingstarted/introduction.md
     - Lab Format: gettingstarted/lab-format.md
+  - Foundations:
+      - Infrastructure as Code (IaC): foundations/1-iac.md
+      - Microservices on Kubernetes: foundations/2-microservices-on-k8s.md
   - Azure (IaC):
-    - Infrastructure as Code (IaC): azure/1-iac.md
-    - Microservices on Kubernetes: azure/2-microservices-on-k8s.md
-    # - Azure Naming & Tagging Conventions: azure/2-naming-conventions.md
-    # - Azure Account & Subscription Management: azure/3-azure-account-subscription.md
-    # - Create new subscription: azure/4-azure-subscription.md
-    # - Register resource providers: azure/5-resource-providers.md
     - Setup Terraform Foundation Part-1: azure/3-tf-foundation-1.md
     - Setup Terraform Foundation Part-2: azure/4-tf-foundation-2.md
     - Create Log Analytics Workspace using terraform: azure/7-log-analytics-workspace.md
@@ -250,6 +235,18 @@ nav:
       - Monitor AKS Cluster Introduction : kubernetes/monitoring/introduction.md
       - Create an Azure Monitoring Workspace Using Terraform : kubernetes/monitoring/monitor-workspace.md
       - Create an Azure Managed Grafana workspace Using Terraform : kubernetes/monitoring/grafana-workspace.md
+  - Production:
+    - Logging & Monitoring: production/logging-monitoring.md
+    - Securing Infra: production/security.md
+    - Config & Secrets Mgmt: production/config-secrets.md
+    - Cost Optimization: production/cost.md
+    - Scaling & HA: production/scaling.md
+    - CI/CD & GitOps: production/ci-cd.md
+  - Appendices:
+      - Terraform Modules Guide: appendices/terraform-modules.md
+      - Reference Architecture Diagrams: appendices/architecture-diagrams.md
+      - Glossary: appendices/glossary.md
+      - Resources & Tools: appendices/resources.md
   # - Azure DevOps:
   #   - Azure DevOps Overview : devops/1-devops-overview.md
   #   - Create Your First service connection : devops/pipelines/1-service-connections.md
