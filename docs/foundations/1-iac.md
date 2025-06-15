@@ -1,4 +1,4 @@
-# Chapter 1: Fundamentals of Infrastructure as Code (IaC)
+# Fundamentals of Infrastructure as Code (IaC)
 
 This is the first chapter of the book. In this chapter, you will learn the fundamental concepts related to **Infrastructure as Code (IaC)**, including what it is, its benefits, and why it matters. You’ll also explore the differences between declarative and imperative approaches, followed by an introduction to **Terraform**—its advantages, key concepts, installation steps, and best practices.
 

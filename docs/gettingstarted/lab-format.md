@@ -94,3 +94,6 @@ References
 !!! note
     
     The above lab format will be consistently followed throughout the book, providing clear implementation details for each task and guiding you through the practical steps necessary to complete the labs.
+
+!!! Important
+    Each lab in this book covers actual implementation details therefore it is always recommended to read the relevant MSDN documentation on particular azure service before start any lab so that is supper easy for you to work on these labs. you will see the links end of each lab for your reference.
