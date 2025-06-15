@@ -1,4 +1,4 @@
-# Chapter 2: Microservices on Kubernetes
+# Microservices on Kubernetes
 
 In this chapter, we take a closer look at why Kubernetes is considered the go-to platform for deploying and managing microservices in the cloud. You’ll learn how it simplifies container orchestration, supports dynamic scaling, and ensures service resilience—all critical factors in building reliable, cloud-native applications. We'll also introduce key Azure services—like Azure Kubernetes Service (AKS), Azure Container Registry (ACR), Key Vault, PostgreSQL, Redis, Application Gateway, and Azure Front Door—that work together to form a secure and scalable microservices infrastructure.
 
@@ -47,7 +47,7 @@ While Kubernetes provides orchestration, it needs a strong supporting infrastruc
 
 *Purpose*: Secure, isolated network space in Azure.
 
-*Role in Microservices*: Kubernetes nodes and Pods must communicate securely across services. A VNet provides the foundation for network isolation, inter-service communication**, private endpoints, and hybrid connectivity to on-prem resources or other cloud regions.
+*Role in Microservices*: Kubernetes nodes and Pods must communicate securely across services. A VNet provides the foundation for network isolation, inter-service communication, private endpoints, and hybrid connectivity to on-prem resources or other cloud regions.
 
 **Application Gateway:**
 
@@ -120,8 +120,6 @@ Terraform by HashiCorp provides a powerful, cloud-agnostic way to manage Azure i
 
 By combining Terraform with Azure’s native services, you gain a highly scalable, version-controlled, and production-ready approach to building and managing modern microservices infrastructure.
 
-!!! Important
-    Each lab in this book covers actual implementation details therefore it is always recommended to read the relevant MSDN documentation on particular azure service before start any lab so that is supper easy for you to work on these labs. you will see the links end of each lab for your reference.
 
 ## Reference
 - [Microsoft MSDN - Microservices architecture on Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices){:target="_blank"}

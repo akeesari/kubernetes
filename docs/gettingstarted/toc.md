@@ -6,10 +6,10 @@
 - [Introduction](../gettingstarted/introduction.md)
 - [Lab Format and Tools](../gettingstarted/lab-format.md)
 
-[**Chapter 1: Fundamentals of Infrastructure as Code (IaC)**](../azure/1-iac.md)
+[**Chapter 1: Fundamentals of Infrastructure as Code (IaC)**](../foundations/1-iac.md)
 
-- [Lab-1: Infrastructure as Code (IaC)](../azure/1-iac.md) 
-- [Lab-2: Microservices Architecture on AKS](../azure/2-microservices-on-k8s.md)
+- [Lab-1: Infrastructure as Code (IaC)](../foundations/1-iac.md) 
+- [Lab-2: Microservices Architecture on AKS](../foundations/2-microservices-on-k8s.md)
 - [Lab-4: Create Terraform Foundation Part-1](../azure/3-tf-foundation-1.md)
 - [Lab-5: Create Terraform Foundation Part-2](../azure/4-tf-foundation-2.md)
 - [Lab-6: Create Log Analytics Workspace using terraform](../azure/7-log-analytics-workspace.md)
