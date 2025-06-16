@@ -1,12 +1,12 @@
 ## Introduction
 
-This is part-2 of the terraform foundation, in this module we will setup the terraform project and folder structure for running any kind of terraform configuration. this folder structure and terraform source code created as part of this lab is the minimum requirements for creating any kind of azure resources using terraform.
+In this lab we will setup the terraform project and folder structure for running any kind of terraform configuration. this folder structure and terraform source code created as part of this lab is the minimum recommended requirements for creating any kind of azure resources using terraform. This simple exercise introduces key Terraform workflows—init, plan, apply, and destroy—while laying the groundwork for more complex modules in future labs.
 
 ## Technical Scenario
-As a `Cloud Engineer`, you have been asked to start working on infrastructure as code (IaC) setup using terraform for your organization so that you can create any kind of azure cloud resources using the source code written in terraform language. As part of the terraform project structure we will be creating our first resource group so that we can test the basic terraform setup or files created in this module.
 
-we will start with bare minimum terraform configuration in this module and update the same files while creating more and more resources in the future modules.
+Create Your First Azure Resource with Terraform
 
+As a `Cloud Engineer`, you have been asked to start working on infrastructure as code (IaC) setup using terraform for your organization so that you can create any kind of azure cloud resources using the source code written in terraform configuration language.
 
 ## Prerequisites
   - Download & Install Terraform
@@ -14,25 +14,20 @@ we will start with bare minimum terraform configuration in this module and updat
   - Azure subscription
   - Visual studio code
   - Azure DevOps project & repo
-  - Terraform Management setup (part-1)
 
 ## Objective
 
 The objective of this lab is to accomplish the following tasks in order to set up the Terraform environment and successfully provision Azure resources:
 
-- Task-1: Create terraform environment variables
-- Task-2: Create terraform providers
-- Task-3: Configure terraform backend state
-- Task-4: Create terraform variables
-- Task-5: Create locals file
-- Task-6: Create azure resource group
-- Task-7: Store Terraform commands
-- Task-8: Initialize Terraform
-- Task-9: Setup Terraform workspace
-- Task-10: Create a Terraform execution plan
-- Task-11: Apply a Terraform execution plan
-- Task-12: Verify the results
-- Task-12: Verify terraform statefile
+What You Will Learn:
+
+*   How to create a Terraform project
+    
+*   Basic structure of `.tf` files
+    
+*   Terraform lifecycle commands
+    
+*   Creating and destroying Azure resources
 
 ## Architecture diagram
 

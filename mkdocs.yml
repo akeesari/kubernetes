@@ -198,9 +198,9 @@ nav:
   - Foundations:
       - Infrastructure as Code (IaC): foundations/1-iac.md
       - Microservices on Kubernetes: foundations/2-microservices-on-k8s.md
-  - Azure (IaC):
-    - Setup Terraform Foundation Part-1: azure/3-tf-foundation-1.md
-    - Setup Terraform Foundation Part-2: azure/4-tf-foundation-2.md
+      - Setup Terraform Foundation: foundations/3-terraform-foundation.md
+      - Getting started with Terraform: foundations/4-terraform-gettingstarted.md
+  - Azure (IaC):    
     - Create Log Analytics Workspace using terraform: azure/7-log-analytics-workspace.md
     -  Create Virtual Network using terraform: azure/8-vnet.md
     -  Create Azure Container Registry (ACR) using terraform: azure/9-acr.md
@@ -235,18 +235,18 @@ nav:
       - Monitor AKS Cluster Introduction : kubernetes/monitoring/introduction.md
       - Create an Azure Monitoring Workspace Using Terraform : kubernetes/monitoring/monitor-workspace.md
       - Create an Azure Managed Grafana workspace Using Terraform : kubernetes/monitoring/grafana-workspace.md
-  - Production:
-    - Logging & Monitoring: production/logging-monitoring.md
-    - Securing Infra: production/security.md
-    - Config & Secrets Mgmt: production/config-secrets.md
-    - Cost Optimization: production/cost.md
-    - Scaling & HA: production/scaling.md
-    - CI/CD & GitOps: production/ci-cd.md
-  - Appendices:
-      - Terraform Modules Guide: appendices/terraform-modules.md
-      - Reference Architecture Diagrams: appendices/architecture-diagrams.md
-      - Glossary: appendices/glossary.md
-      - Resources & Tools: appendices/resources.md
+  # - Production:
+  #   - Logging & Monitoring: production/logging-monitoring.md
+  #   - Securing Infra: production/security.md
+  #   - Config & Secrets Mgmt: production/config-secrets.md
+  #   - Cost Optimization: production/cost.md
+  #   - Scaling & HA: production/scaling.md
+  #   - CI/CD & GitOps: production/ci-cd.md
+  # - Appendices:
+  #     - Terraform Modules Guide: appendices/terraform-modules.md
+  #     - Reference Architecture Diagrams: appendices/architecture-diagrams.md
+  #     - Glossary: appendices/glossary.md
+  #     - Resources & Tools: appendices/resources.md
   # - Azure DevOps:
   #   - Azure DevOps Overview : devops/1-devops-overview.md
   #   - Create Your First service connection : devops/pipelines/1-service-connections.md
