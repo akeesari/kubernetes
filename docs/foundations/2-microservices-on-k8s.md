@@ -51,7 +51,8 @@ While Kubernetes provides orchestration, it needs a strong supporting infrastruc
 
 **Application Gateway:**
 
-The Application Gateway serves as the entry point for client requests from the public DNS. It acts as a reverse proxy and load balancer, routing requests to the appropriate backend services. With features like SSL/TLS termination and backend pool configuration, the Application Gateway helps to decouple clients from services.
+The Application Gateway serves as the entry point for client requests from the public DNS. It acts as a reverse proxy and load balancer, routing requests to the appropriate backend services. With features like SSL/TLS termination, Web Application Firewall (WAF) protection and backend pool configuration, the Application Gateway helps to decouple clients from services. 
+Azure Application Gateway with Application Gateway Ingress Controller (AGIC) acts as a Layer 7 ingress controller for AKS. This allows for secure and scalable exposure of AKS-hosted microservices to the internet or other services.
 
 **Azure Front Door and CDN Profile**
 
@@ -100,13 +101,27 @@ The Application Gateway serves as the entry point for client requests from the p
 
 When Kubernetes is integrated with the broader ecosystem of Azure services, it forms a powerful foundation for running microservices at scale. Each component plays a distinct role in supporting a cloud-native architecture:
 
-* **AKS** serves as the core orchestration engine, running containerized applications reliably and efficiently.
-* **PostgreSQL** and **Azure Storage** provide persistent and structured data storage, tailored for both transactional workloads and unstructured data needs.
-* **Azure Key Vault** secures application secrets, certificates, and keys, keeping sensitive information out of code and environment files.
-* **Virtual Networks (VNets)** isolate and protect workloads, while **Azure Front Door** brings global load balancing, SSL offloading, and acceleration for edge delivery.
-* **Azure Log Analytics** and **Azure Monitor** offer full observability into workloads, including logs, metrics, and performance diagnostics.
-* **Redis Cache** enhances application responsiveness by reducing latency and offloading backend databases.
-* **Azure Container Registry (ACR)** ensures secure and performant delivery of container images to AKS clusters.
+* **Azure Kubernetes Service (AKS)** serves as the core orchestration engine, running containerized applications reliably and efficiently.
+
+*   **Azure Container Registry (ACR)** stores and manages container images that are deployed to AKS.
+  
+*   **Azure Virtual Network (VNet)** provides isolated and secure network boundaries, allowing private communication between services and resources.
+    
+*   **Azure PostgreSQL Flexible Server** serves as a managed relational database for data persistence needs across microservices.
+    
+*   **Azure Key Vault** securely stores secrets, connection strings, and certificates, ensuring secure communication and access.
+    
+*   **Azure Cache for Redis** enhances performance by providing low-latency access to frequently used data.
+    
+*   **Azure Front Door** and **Azure CDN Profile** enable global load balancing, SSL termination, and content acceleration for end-user traffic.
+    
+*   **Azure Storage Account** supports static file storage, backups, and shared file systems needed by services.
+    
+*   **Azure Log Analytics Workspace** is integrated with AKS to provide centralized monitoring, diagnostics, and logging.
+    
+*   **Private Endpoints** and **Private DNS Zones** are used extensively to enforce private network access between services, eliminating exposure to the public internet.
+
+*   **Azure DNS Zone** is used to centrally manage custom domain names for services exposed via Application Gateway, Front Door.    
 
 Together, these services create a robust, scalable, and secure infrastructure for microservices—aligned with the core goal of this book: **Building Scalable Kubernetes Infrastructure for Microservices**.
 
