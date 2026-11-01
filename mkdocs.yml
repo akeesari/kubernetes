@@ -1,7 +1,7 @@
-# Copyright (c) 2025 Anji Keesari <anjkeesari@gmail.com>
+# Copyright (c) 2025 Anji Keesari. All rights reserved. See LICENSE.
 
 site_name: Kubernetes Infra for Microservices
-site_url: https://akeesari.github.io/kubernetes/
+site_url: https://kubernetes.anjikeesari.com/
 site_author: Anji Keesari
 site_description: Real-world labs using Azure and Terraform to build scalable Kubernetes infrastructure for microservices
 
@@ -63,7 +63,6 @@ theme:
   extra_javascript:
   - javascripts/extra.js
   - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
@@ -115,13 +114,9 @@ extra:
     property: G-KR7ZFHXJM1
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/
+      link: https://github.com/akeesari
+    - icon: fontawesome/solid/globe
+      link: https://anjikeesari.com
 
   footer: |
       <style>
@@ -131,57 +126,11 @@ extra:
       </style>
 plugins:
   - search
-  # https://pypi.org/project/mkdocs-with-pdf/
-  # - with-pdf:
-  #     author: ANJI KEESARI
-  #     copyright: Copyright © 2024 Anji Keesari
-  #     #
-  #     cover: true
-  #     back_cover: true
-  #     cover_title: "Building Microservices with Containers"
-  #     cover_subtitle: "A Practical Guide"
-  #     # custom_template_path: TEMPLATES PATH
-  #     #
-  #     toc_title: "Building Microservices with Containers"
-  #     #heading_shift: false
-  #     #toc_level: 3
-  #     ordered_chapter_level: 2
-  #     #excludes_children:
-  #     #    - 'release-notes/:upgrading'
-  #     #    - 'release-notes/:changelog'
-  #     #
-  #     exclude_pages:
-  #        - 'Home/'
-  #        - 'gettingstarted/'
-  #        - 'azure/'
-  #        - 'kubernetes/'
-  #        - 'devops/'
-  #        - 'argocd/'
-  #        - 'helmchart/'
-  #     #convert_iframe:
-  #     #    - src: IFRAME SRC
-  #     #      img: POSTER IMAGE URL
-  #     #      text: ALTERNATE TEXT
-  #     #    - src: ...
-  #     #two_columns_level: 3
-  #     #
-  #     #render_js: true
-  #     #headless_chrome_path: headless-chromium
-  #     #
-  #     #output_path: any-place/document.pdf
-  #     #enabled_if_env: ENABLE_PDF_EXPORT
-  #     #
-  #     #debug_html: true
-  #     #show_anchors: true
-  #     #verbose: true
-hide:
-  - footer
-# google_analytics: ["UA-118407822-1", "kubernetes.github.io"]
 
 
 # copyright   
 copyright: |
-  Copyright &copy; 2024 <a href="https://anjikeesari.com/"  target="_blank" rel="noopener">Anji Keesari</a>
+  Copyright &copy; 2025 <a href="https://anjikeesari.com/"  target="_blank" rel="noopener">Anji Keesari</a>. All rights reserved.
 
 
 # Page tree

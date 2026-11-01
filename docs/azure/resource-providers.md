@@ -174,7 +174,7 @@ follow these instruction before running this script:
 
 # Register missing resource providers in a new subscription based on a list from an old subscription
 
-Set-AzContext -SubscriptionId '00000000-0000-0000-0000-0000000000008' #old-subscription
+Set-AzContext -SubscriptionId '00000000-0000-0000-0000-000000000000' #old-subscription
 $ExistingResourceProvidersInOldSubscription = Get-AzResourceProvider
 
 

@@ -704,7 +704,7 @@ resource "azurerm_key_vault_secret" "secret_2" {
 # Create key vault secret for database1-connection-string
 resource "azurerm_key_vault_secret" "secret_3" {
   name  = "database1-db-connection-string"
-  value = "User ID=postgres;Password=xxxxxx;Host=psql-postgresql1-dev.postgres.database.azure.com;database=database1;Port=5432;"
+  value = "User ID=postgres;Password=replaceme;Host=psql-postgresql1-dev.postgres.database.azure.com;database=database1;Port=5432;"
   # value        = "User ID=postgres;Password=${azurerm_postgresql_flexible_server.psql.administrator_password};Host=${azurerm_postgresql_flexible_server.psql.name}.postgres.database.azure.com;database=database1;Port=5432;"
   key_vault_id = azurerm_key_vault.kv.id
   tags         = {}

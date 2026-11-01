@@ -1,0 +1,17 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+
+# Python / MkDocs
+env/
+.venv/
+venv/
+__pycache__/
+site/
+
+# Secrets - never commit
+*.tfvars
+*.tfstate
+*.tfstate.*
+.env
