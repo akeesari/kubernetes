@@ -39,7 +39,7 @@ mkdocs build --strict                       # must pass before every commit; CI 
 
 - **No silent assumptions.** If scope, a requirement or an acceptance criterion is ambiguous, ask before proceeding. Never present a guess as settled. In docs, an undecided point is a `TODO:`, not an invented default.
 - **Stay in scope.** Don't touch unrelated files or do adjacent cleanup nobody asked for. Prefer the smallest change that solves the problem; add no dependency, plugin or script without a demonstrated need.
-- **Work through to the end.** Treat the request as a goal and continue until it's done and verified, or a real blocker stops you (an action needing the user's go-ahead such as a push or deleting something you didn't create, information only the user has, or a failure you can't fix). Then state the blocker, what you tried and what's needed. Do what's clearly part of the task, such as fixing a failure you caused or updating affected docs, without asking, and report it.
+- **Work through to the end.** Treat the request as a goal and continue until it's done and verified, or a real blocker stops you (deleting something you didn't create, information only the user has, or a failure you can't fix). Then state the blocker, what you tried and what's needed. Do what's clearly part of the task, such as fixing a failure you caused, updating affected docs, or committing and pushing the finished work, without asking, and report it.
 - **Verify before claiming.** Never say the site builds or a check passes unless a run in this session showed it. Show real command output rather than a summary. Run the narrowest check first.
 
 ## Workflow rules
@@ -67,7 +67,9 @@ When behavior, structure or tooling changes, update every affected document in t
 
 - One logical change per commit. Stage by path (`git add <paths>`), never `git add -A`. Never commit `.env` or other gitignored files.
 - Message: `type: summary` (`feat`, `fix`, `docs`, `chore`, `ci`, ...), imperative, under about 70 characters, with a body when the why isn't obvious.
-- Commit once the work is done and `mkdocs build --strict` passes. Push only when asked.
+- Commit and push to `main` as soon as the task is complete and `mkdocs build --strict` and `python scripts/check_sensitive.py` pass. Don't wait for approval; report what was pushed.
+- Don't push if a check fails, the task is unfinished, or uncommitted changes from another session are mixed into the same files. Fix or state the blocker instead.
+- Never force-push or rewrite published history without being asked.
 
 ## Working alongside other sessions
 
@@ -79,7 +81,9 @@ Applies to README, CONTRIBUTING, this file and commit messages (not to the book 
 
 ## Next steps
 
-End every development response with a **Next steps** list of 2-4 numbered options that need the user's go-ahead, grounded in a real remaining gap (see Known gaps). Mark one **(Recommended)** and list it first. If nothing needs the user, say so in one line.
+Do whatever follows from the current task yourself (build, checks, doc sync, commit, push, fixing what you broke); never list these as options.
+
+End every development response with a **Next steps** list of 2-4 numbered suggestions for *new* tasks, grounded in a real remaining gap (see Known gaps). They are recommendations for what to do next, not approvals for finishing this task. Mark one **(Recommended)** and list it first. If there is nothing worth suggesting, say so in one line.
 
 ## Known gaps
 
