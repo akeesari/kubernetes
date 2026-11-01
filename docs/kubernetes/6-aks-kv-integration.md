@@ -45,7 +45,7 @@ In this exercise, we will cover the following steps to integrating Azure key vau
 
 This digram explains components used in this lab like CSI driver, Keyvault Provider & AKS VMSS access in Key vault.
  
-![Alt text](images\image-32.png)
+![Alt text](images/image-32.png)
 
 **login to Azure**
 

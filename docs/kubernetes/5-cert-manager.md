@@ -71,7 +71,7 @@ Below is a high-level architecture diagram depicting the components involved in 
 
 [Diagram Placeholder - Working on it...]
  
-![Alt text](images\image-7.png)
+![Alt text](images/image-7.png)
 
 
 **login to Azure**
@@ -793,7 +793,7 @@ You'll notice that the certificate used is provided by Let's Encrypt. This indic
 By following these steps, you've successfully configured your application to use HTTPS URLs and demonstrated that the certificate issuance and management process with cert-manager and Let's Encrypt is functioning as intended.
 
 
-![Alt text](images\image-9.png)
+![Alt text](images/image-9.png)
 
 
 ## Reference:
