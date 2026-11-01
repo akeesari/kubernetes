@@ -1,0 +1,29 @@
+Copyright (c) 2025 Anji Keesari. All rights reserved.
+
+This repository and everything in it - including the text, code samples,
+Terraform and Kubernetes configurations, diagrams, screenshots, images,
+logos, and the site design - are the exclusive property of Anji Keesari
+("the Author") and are protected by copyright law.
+
+NO LICENSE IS GRANTED. Except as stated below, you may not copy, reproduce,
+modify, adapt, translate, redistribute, republish, sell, sublicense, or create
+derivative works from any part of this repository, in any form or medium,
+without the Author's prior written permission. This includes use of the
+content for commercial training courses, books, videos, blog posts, or for
+training machine-learning models.
+
+Permitted without further permission:
+  1. Reading the published book at https://kubernetes.anjikeesari.com for
+     your own personal, non-commercial learning.
+  2. Running the examples on your own systems for your own personal learning.
+  3. Viewing and forking this repository on GitHub, solely as permitted by
+     the GitHub Terms of Service.
+  4. Quoting short excerpts with clear attribution and a link back to the
+     original, as allowed by fair use / fair dealing.
+
+To request permission for any other use, contact: anjkeesari@gmail.com
+
+THE CONTENT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. The labs create
+cloud resources that may incur costs and change your environment; you use them
+at your own risk, and the Author is not liable for any damages arising from
+their use.
