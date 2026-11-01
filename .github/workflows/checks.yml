@@ -21,6 +21,11 @@ jobs:
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check for IDs, emails, secrets and image metadata
+        run: python scripts/check_sensitive.py
 
   links:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'

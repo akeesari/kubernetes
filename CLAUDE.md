@@ -21,7 +21,8 @@ mkdocs build --strict                       # must pass before every commit; CI 
 | Path | Purpose |
 |---|---|
 | `docs/foundations/`, `azure/`, `kubernetes/`, `gettingstarted/` | Published chapters (Terraform and AKS labs) |
-| `docs/argocd/`, `helmchart/`, `devops/` | Finished drafts, commented out of `nav:` |
+| `scripts/` | `check_sensitive.py` (CI + pre-commit guard), `strip_image_metadata.py` |
+| `.pre-commit-config.yaml`, `.gitleaks.toml` | Local and CI secret scanning |
 | `docs/<section>/images/` | Screenshots, referenced by relative path |
 | `docs/overrides/` | Theme overrides (`home.html`, `404.html`, `main.html`) |
 | `docs/CNAME` | Custom domain; keep it |
@@ -49,7 +50,10 @@ mkdocs build --strict                       # must pass before every commit; CI 
 - Preserve the author's voice. Fix errors, outdated commands and structure; don't rewrite style or whole chapters.
 - Don't commit large binaries (PDFs, videos) or `.DS_Store`.
 - Don't add external scripts to `extra_javascript` without vetting (polyfill.io was removed for supply-chain reasons). Review `docs/overrides/` HTML changes for injected scripts.
-- No secrets or private data in content, config or screenshots. Use `replaceme` for secrets and `00000000-0000-0000-0000-000000000000` for subscription/tenant/object IDs. No personal or work emails. Flag screenshots that show real IDs.
+- No secrets or private data in content, config or screenshots. Use `replaceme` for secrets and `00000000-0000-0000-0000-000000000000` for subscription/tenant/object IDs. No personal or work emails.
+- Run `python scripts/check_sensitive.py` before every commit (it also runs in CI). It rejects non-zero GUIDs, unexpected emails, the employer name, key/secret shapes, literal passwords and image metadata. Add `sensitive-ok` on a line only for a deliberate false positive.
+- New or edited screenshots: view them and confirm no IDs, keys, public IPs, employer or personal names, or profile photos are visible. Cover with opaque black boxes, then run `python scripts/strip_image_metadata.py`. Images stay in git history forever, so check before committing.
+- Unpublished draft chapters (Azure DevOps, Argo CD, Helm) are deliberately NOT in this repo: they had unredacted screenshots. A copy is at `C:\Source\Repos\kubernetes-drafts` (local, outside git). Sanitize their screenshots before bringing any back.
 
 ## Keeping docs in sync
 
@@ -79,10 +83,9 @@ End every development response with a **Next steps** list of 2-4 numbered option
 
 ## Known gaps
 
-- Git history still contains old secrets, subscription IDs, a work email and JPEG author metadata; rewrite it or publish from a fresh repo before going public.
-- Screenshots may show real subscription IDs or emails.
-- Labs not yet verified against current `azurerm` provider and AKS versions.
-- Argo CD, Helm and DevOps sections unpublished.
+- Remaining screenshots still show public IPs (5 azure, 8 kubernetes images), the author's name as the subscription display name and tags (~60 images), and the author's profile photo in some browser toolbars. Re-scan before relying on this.
+- Labs not yet verified against current `azurerm` (pins range from `~>2.0` to `~>3.69`; current is 4.x) and AKS versions.
+- Argo CD, Helm and DevOps chapters unpublished and outside the repo until their screenshots are sanitized.
 - Link check runs weekly only (`checks.yml`); fix reported dead links.
 - `requirements.txt` is a version range, not pinned.
 - Material for MkDocs reaches end of life on 2027-05-05; a Zensical migration will be needed eventually.

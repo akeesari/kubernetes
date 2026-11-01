@@ -1,0 +1,15 @@
+# Install once:  pip install pre-commit && pre-commit install
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.21.2
+    hooks:
+      - id: gitleaks
+  - repo: local
+    hooks:
+      - id: check-sensitive
+        name: check sensitive data (IDs, emails, secrets, image metadata)
+        entry: python scripts/check_sensitive.py
+        language: system
+        pass_filenames: true
+        types_or: [text, png, jpeg]
+        exclude: ^(LICENSE|scripts/check_sensitive\.py)$

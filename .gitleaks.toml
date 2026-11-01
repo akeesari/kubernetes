@@ -1,0 +1,8 @@
+title = "kubernetes book"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Placeholders used in the book"
+regexes = ['''replaceme''', '''00000000-0000-0000-0000-000000000000''']
